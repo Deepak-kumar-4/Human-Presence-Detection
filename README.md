@@ -52,8 +52,8 @@ Traditional CCTV systems require manual monitoring, and motion-based alerts gene
 ```mermaid
 flowchart LR
     A[CCTV / Video Feed] --> B[Preprocessing]
-    B --> C["Detection<br/>(YOLO + MobileNet-SSD)"]
-    C -->|Human Detected| D["Alerting<br/>(SMTP + Twilio SMS)"]
+    B --> C["Detection(YOLO + MobileNet-SSD)"]
+    C -->|Human Detected| D["Alerting(SMTP + Twilio SMS)"]
     C --> E[Event Logging - SQLite]
     E --> F[Reports + Web Dashboard]
     D --> F
@@ -112,6 +112,8 @@ The system is organized into modular packages — `detection/`, `alerts/`, and a
 ![Generated HTML report](assets/screenshots/html-report.jpg)
 ![Generated text report](assets/screenshots/text-report.jpg)
 
+📄 [View a sample generated HTML report](assets/sample-output/sample-detection-report.html) · [View a sample text report](assets/sample-output/sample-detection-report.txt)
+
 ### Alerts
 
 ![Terminal log showing email/SMS alerts sent](assets/screenshots/terminal-alert-log.jpg)
@@ -122,8 +124,6 @@ The system is organized into modular packages — `detection/`, `alerts/`, and a
 ---
 
 ## 📁 Project Structure
-
-```
 Human-Presence-Detection/
 ├── app.py
 ├── gui.py
@@ -142,11 +142,12 @@ Human-Presence-Detection/
 │   └── SMSNotify.py
 │
 ├── static/
-│   └── frames/          (gitignored — runtime detection output)
+│   └── frames/                    (gitignored — runtime detection captures)
+│   └── detection_report.html/.txt (gitignored — live runtime output)
 │
 └── assets/
-    └── screenshots/
-```
+├── screenshots/
+└── sample-output/              (frozen sample report, committed for reference)
 
 ---
 
@@ -188,14 +189,13 @@ Place the file in the project root directory before running the application.
 ### Configure environment variables
 
 Copy `.env.example` to `.env` and fill in your own values:
-
-```
+EMAIL_SENDER=your_email@gmail.com
+EMAIL_APP_PASSWORD=your_gmail_app_password
+EMAIL_RECIPIENTS=recipient1@example.com,recipient2@example.com
 TWILIO_ACCOUNT_SID=your_account_sid
 TWILIO_AUTH_TOKEN=your_auth_token
-SMTP_EMAIL=your_email@example.com
-SMTP_PASSWORD=your_app_password
-EMAIL_RECIPIENTS=recipient1@example.com,recipient2@example.com
-```
+TWILIO_PHONE_NUMBER=your_twilio_number
+SMS_RECIPIENTS=+1XXXXXXXXXX,+1XXXXXXXXXX
 
 `.env` is excluded from version control — never commit real credentials.
 
