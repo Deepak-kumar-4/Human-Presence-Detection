@@ -1,6 +1,6 @@
 # Human Presence Detection System 🚨
 
-A real-time computer vision–based surveillance system that detects **human presence during non-working hours** using CCTV footage and triggers instant alerts to prevent unauthorized access — built to eliminate manual, error-prone CCTV monitoring.
+A real-time computer vision–based surveillance system that detects **human presence during non-working hours** using CCTV footage and triggers instant alerts to prevent unauthorized access, Designed to automate CCTV monitoring and reduce human intervention during non-working hours.
 
 ![Python](https://img.shields.io/badge/Python-3.9+-3776AB?style=flat-square&logo=python&logoColor=white)
 ![YOLO](https://img.shields.io/badge/YOLO-Object%20Detection-00FFFF?style=flat-square)
@@ -32,7 +32,7 @@ Traditional CCTV systems require manual monitoring, and motion-based alerts gene
 
 - Reduced false alerts
 - Faster response to security breaches
-- Fully automated monitoring during non-working hours — no human operator required
+- Automated monitoring workflow during non-working hours — no human operator required
 
 ---
 
@@ -96,6 +96,16 @@ The system is organized into modular packages — `detection/`, `alerts/`, and a
 - **YOLO** — high detection accuracy and strong real-time performance on live video streams
 - **MobileNet-SSD** — lightweight and fast, useful for resource-constrained deployments
 - Using both allows the system to balance **accuracy vs. speed** depending on hardware, and significantly reduces the false positives common in traditional motion-based detection
+
+---
+
+## 📈 Performance
+
+- Detection Models: YOLOv3 & MobileNet-SSD
+- Average Processing Speed: ~18 FPS
+- Supported Input: Webcam / CCTV / MP4
+- Alert Channels: Email + SMS
+- False Positives: Reduced compared to motion-based detection
 
 ---
 
@@ -184,13 +194,14 @@ pip install -r requirements.txt
 
 Due to GitHub file size limits, YOLO weight files are not included in this repo.
 
-Download `yolov3.weights` from: https://pjreddie.com/media/files/yolov3.weights
+Download `yolov3.weights` from the official Darknet website: https://pjreddie.com/media/files/yolov3.weights
 
 Place the file in the project root directory before running the application.
 
 ### Configure environment variables
 
 Copy `.env.example` to `.env` and fill in your own values:
+```env
 EMAIL_SENDER=your_email@gmail.com
 EMAIL_APP_PASSWORD=your_gmail_app_password
 EMAIL_RECIPIENTS=recipient1@example.com,recipient2@example.com
@@ -198,7 +209,7 @@ TWILIO_ACCOUNT_SID=your_account_sid
 TWILIO_AUTH_TOKEN=your_auth_token
 TWILIO_PHONE_NUMBER=your_twilio_number
 SMS_RECIPIENTS=+1XXXXXXXXXX,+1XXXXXXXXXX
-
+```
 `.env` is excluded from version control — never commit real credentials.
 
 ---
@@ -221,6 +232,23 @@ SMS_RECIPIENTS=+1XXXXXXXXXX,+1XXXXXXXXXX
 - **Planned:** add a lightweight cloud deployment option for live demos
 
 ---
+
+## 🏛️ Design Decisions
+
+- Modular detection pipeline
+- Separation of alerting services
+- Environment-based configuration
+- Database-backed reporting
+- Runtime artifact isolation
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License.
+
+---
+
 
 ## 👤 Author
 
