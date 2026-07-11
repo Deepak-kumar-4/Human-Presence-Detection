@@ -124,6 +124,8 @@ The system is organized into modular packages — `detection/`, `alerts/`, and a
 ---
 
 ## 📁 Project Structure
+
+<pre>
 Human-Presence-Detection/
 ├── app.py
 ├── gui.py
@@ -142,13 +144,13 @@ Human-Presence-Detection/
 │   └── SMSNotify.py
 │
 ├── static/
-│   └── frames/                    (gitignored — runtime detection captures)
-│   └── detection_report.html/.txt (gitignored — live runtime output)
+│   ├── frames/                     (gitignored — runtime detection captures)
+│   └── detection_report.html/.txt  (gitignored — live runtime output)
 │
 └── assets/
-├── screenshots/
-└── sample-output/              (frozen sample report, committed for reference)
-
+    ├── screenshots/
+    └── sample-output/              (frozen sample report, committed for reference)
+</pre>
 ---
 
 ## 🚀 Getting Started
