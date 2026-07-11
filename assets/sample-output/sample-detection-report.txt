@@ -1,0 +1,13 @@
+Recent Detection Events:
+------------------------------
+ID: 375, Timestamp: 2024-11-29 09:28:43, Status: Human Detected, Frame Path: static/frames\frame_1732852723.jpg
+ID: 374, Timestamp: 2024-11-29 09:28:39, Status: Human Detected, Frame Path: static/frames\frame_1732852719.jpg
+ID: 373, Timestamp: 2024-11-29 09:28:35, Status: Human Detected, Frame Path: static/frames\frame_1732852715.jpg
+ID: 372, Timestamp: 2024-11-29 09:28:31, Status: Human Detected, Frame Path: static/frames\frame_1732852711.jpg
+ID: 371, Timestamp: 2024-11-29 09:28:27, Status: Human Detected, Frame Path: static/frames\frame_1732852707.jpg
+ID: 370, Timestamp: 2024-11-29 09:28:23, Status: Human Detected, Frame Path: static/frames\frame_1732852703.jpg
+ID: 369, Timestamp: 2024-11-29 09:28:19, Status: Human Detected, Frame Path: static/frames\frame_1732852699.jpg
+ID: 368, Timestamp: 2024-11-29 09:28:05, Status: Human Detected, Frame Path: static/frames\frame_1732852685.jpg
+ID: 367, Timestamp: 2024-11-29 09:26:00, Status: Human Detected, Frame Path: static/frames\frame_1732852560.jpg
+ID: 366, Timestamp: 2024-11-29 09:25:56, Status: Human Detected, Frame Path: static/frames\frame_1732852556.jpg
+------------------------------

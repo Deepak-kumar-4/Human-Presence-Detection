@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+
+# Local Claude Code guidance (not for the repo)
+CLAUDE.md
+
+# Virtual env
+.venv/
+
+# Secrets
+.env
+
+# Database
+detection_reports.db
+
+# Live runtime report output (regenerated on every app run)
+static/detection_report.html
+static/detection_report.txt
+
+# Captured detection frames
+static/frames/*.jpg
+
+# YOLO weights (large binary, download separately)
+yolov3.weights
