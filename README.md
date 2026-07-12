@@ -138,7 +138,6 @@ The system is organized into modular packages — `detection/`, `alerts/`, and a
 ![Terminal log showing email/SMS alerts sent](assets/screenshots/terminal-alert-log.jpg)
 ![Detection alert email](assets/screenshots/email-alert.png)
 ![Detection alert SMS](assets/screenshots/sms-alert.png)
-![Inbox showing received detection emails](assets/screenshots/email-inbox-list.jpg)
 
 ---
 
