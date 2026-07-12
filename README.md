@@ -254,7 +254,7 @@ SMS_RECIPIENTS=+1XXXXXXXXXX,+1XXXXXXXXXX
 
 ## 👤 Author
 
-**Deepak Kumar B**
+**Deepak Kumar B** <br>
 Full Stack Developer | MCA, St Joseph's University
 
 [GitHub](https://github.com/Deepak-kumar-4) · [LinkedIn](https://linkedin.com/in/deepak-kumar-b-dee412)
