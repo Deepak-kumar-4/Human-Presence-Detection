@@ -36,6 +36,12 @@ Traditional CCTV systems require manual monitoring, and motion-based alerts gene
 
 ---
 
+## 💡 Motivation
+
+Manual CCTV monitoring is repetitive, expensive, and prone to human error. This project explores how computer vision can automate surveillance by detecting only human presence and triggering real-time alerts, reducing false alarms and enabling faster incident response.
+
+---
+
 ## ✨ Key Features
 
 - Real-time human detection using deep learning (YOLO + MobileNet-SSD)
@@ -116,9 +122,12 @@ The system is organized into modular packages — `detection/`, `alerts/`, and a
 ![Live detection running on video feed](assets/screenshots/detecting-humans.jpg)
 ![Detected human with bounding box](assets/screenshots/humans-detected.jpg)
 
-### Reports & Dashboard
+### Dashboard
 
 ![Dashboard with detection event log](assets/screenshots/dashboard-event-log.jpg)
+
+### Reports
+
 ![Generated HTML report](assets/screenshots/html-report.jpg)
 ![Generated text report](assets/screenshots/text-report.jpg)
 
@@ -240,12 +249,6 @@ SMS_RECIPIENTS=+1XXXXXXXXXX,+1XXXXXXXXXX
 - Environment-based configuration
 - Database-backed reporting
 - Runtime artifact isolation
-
----
-
-## 📜 License
-
-This project is licensed under the MIT License.
 
 ---
 
